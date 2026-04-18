@@ -414,7 +414,7 @@ function drawConfetti(){ctx.clearRect(0,0,canvas.width,canvas.height);pieces.for
 /* TYPED MESSAGE */
 const MSG=`Dear Areeba!\n\nWishing you the happiest birthday! You light up every room, my Chanda. 🌙
 
-May this year bring you joy, smiles, and all the love you deserve. 🌸\n\nI really value the bond we share and am always rooting for your success.\nI've sent a little something your way—I hope it makes you smile when you click the link! 💙`;
+May this year bring you joy, smiles, and all the love you deserve. 🌸\n\nI really value the bond we share and am always rooting for your success.\nI've sent a little something your way—I hope my effort makes you smile when you click the link! 💙`;
 let ci=0;
 function typeMsg(){const el=document.getElementById('typedMsg');const cur=document.getElementById('cursor');if(ci<MSG.length){const ch=MSG[ci];if(ch==='\n')el.insertBefore(document.createElement('br'),cur);else el.insertBefore(document.createTextNode(ch),cur);ci++;setTimeout(typeMsg,ch===','||ch==='.'?90:ch==='\n'?380:40);}}
 
